@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>I Love Tea!</title>
+		<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Mobile IE needs ClearType for smoothing fonts -->
+		<meta http-equiv="cleartype" content="on">
+		<!-- StyleSheets under here -->
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0rc2/jquery.mobile-1.0rc2.min.css"/>
+		<link rel="stylesheet" href="css/style.css" type="text/css"/>
+		<link rel="stylesheet" href="index.html" type="text/area"/>
+		<link rel="stylesheet" href="links/budget.html" type="text/area"/>
+		<link rel="stylesheet" href="css/ps/style.css"/>
+		<link rel="stylesheet" href="css/ps/jquery-mobile.css"/>
+		<link rel="stylesheet" href="css/ps/photoswipe.css"/>
+		<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+		<script src="js/libs/modernizr.custom.min.js"></script>
+	</head>
+	<body>
+	
+		<!--Menu Page-->
+		<div data-role="page" id="home">
+		
+		<div id="cta">
+			<a href="additem.html"><img src="images/ctatea.png" alt="create guest"/></a>
+		</div>
+		<div data-role="content">
+			<p>
+				Browse Categories!
+			</p>
+			<ul data-role="listview" data-filter="true">
+				<li><a href="#guest">
+				<img src="images/guestlist.png" alt="icon1" class="ui-li-icon">
+				<h3>Guest List</h3>
+				<p>
+					Add a Guest
+				</p>
+				</a></li>
+				<li><a href="#theme">
+				<img src="images/theme.png" alt="icon1" class="ui-li-icon">
+				<h3>Themes</h3>
+				<p>
+					Customize your Party Theme
+				</p>
+				</a></li>
+				<li><a href="#menu">
+				<img src="images/menu.png" alt="icon1" class="ui-li-icon">
+				<h3>Menu</h3>
+				<p>
+					Serving Food & Drinks
+				</p>
+				</a></li>
+				<li><a href="#music">
+				<img src="images/music.png" alt="icon1" class="ui-li-icon">
+				<h3>Music</h3>
+				<p>
+					The Life of the Party
+				</p>
+				</a></li>
+				<li><a href="#decorations">
+				<img src="images/decoration.png" alt="icon1" class="ui-li-icon">
+				<h3>Decorations</h3>
+				<p>
+					Decor & Favors
+				</p>
+				</a></li>
+			</ul>
+			<div data-role="footer" data-position="fixed"data-theme="a">
+				<a href="#" id="right">right app</a> 
+			</div>
+		</div>
+		</div>
+		
+		<!--Guest List-->
+		<div data-role="page" id="guest" data-add-back-btn="true">
+			<div data-role="header" data-position="fixed"data-theme="a">
+				<h1>Guest List</h1>
+			</div>
+			<div data-role="content">
+				<h3>Planning an Event? Try out our new <span>Guest List Planner</span> feature!</h3>
+					<p>
+						Create a Guest List now.
+					</p>
+				</div>
+				<ul data-role="listview" data-inset="true" data-theme="d" data-divider-theme="e">
+					<li data-role="list-divider">Guest Form</li>
+					<li><a href="additem.html">
+					<img src="images/PNG/g1.png"/>
+					<h3>Add a Guest</h3>
+					<p>
+						Keep track of your guests here.
+					</p>
+					</a></li>
+					<li data-role="list-divider">Guest Resources</li>
+					<li><a href="invitation.html">
+					<img src="images/mail.png"/>
+					<h3>Invitations</h3>
+					<p>
+						Personalize your invitations.
+					</p>
+					</a></li>
+					<li><a href="#rsvp">
+					<img src="images/To-Do List.ico"/>
+					<h3>RSVP</h3>
+					<p>
+						Check off Guests as they send responses.
+					</p>
+					</a></li>
+					<li><a href="attend.html">
+					<img src="images/people.png"/>
+					<h3>Attendance List</h3>
+					<p>
+						Guest List at a Glance.
+					</p>
+					</a></li>
+				</ul>
+			
+				
+				<div data-role="footer" data-position="fixed" data-theme="a"data-id="guest">
+					<div data-role="navbar">
+						<ul>
+							<li><a href="budget.html">Budget</a></li>
+							<li><a href="#calendar">Calendar</a></li>
+							<li><a href="#contact">Contact</a></li>
+							<li><a href="#home">Home</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			<!--Guest List Planner Links-->
+			<!--RSVP-->
+			<div data-role="page" id="rsvp" data-add-back-btn="true">
+				<div data-role="header" data-position="fixed">
+					<h1>Reservations</h1>
+				</div>
+				<div data-role="content">
+					<h3>Keep Track of Your RSVP's</h3>
+					<p>
+						Check responses here.
+					</p>
+				</div>
+				<ul data-role="listview" data-inset="true">
+					<img src="images/guest.png"/>
+					<li data-role="list-divider">RSVP</li>
+					<p>
+						1. Lady Arya of House Stark
+					</p>
+					<p>
+						2. Lady Sansa of House Stark
+					</p>
+					<p>
+						3. Lady Margaery of House Tyrell
+					</p>
+					<p>
+						4. Lady Willa of House Frey
+					</p>
+					<p>
+						5. Lady Lolly of House Martell
+					</p>
+					<p>
+						6. Lady Lysa of House Tully
+					</p>
+					<p>
+						7. Lady Cat of House Tully
+					</p>
+					<p>
+						8. Lady Olena of House Martell
+					</p>
+					<p>
+						9. Queen Cercei Baratheon of House Lannister
+					</p>
+					<p>
+						10. Princess Myrcella of House Baratheon
+					</p>
+					<p>
+						11. Queen Danyearas of House Targaryen
+					</p>
+					<p>
+						12. Lady Asha of House Greyjoy
+					</p>
+				</ul>
+				<div data-role="footer" data-position="fixed" data-id="attend">
+					<div data-role="navbar">
+						<ul>
+							<li><a href="budget.html">Budget</a></li>
+							<li><a href="#calendar">Calendar</a></li>
+							<li><a href="#contact">Contact</a></li>
+							<li><a href="#home">Home</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			<!--Themes-->
+			<div data-role="page" id="theme" data-add-back-btn="true">
+				<div data-role="header" data-position="fixed">
+					<h1>Themes</h1>
+				</div>
+				<div data-role="content">
+					<p>
+						Every party should have a theme!
+					</p>
+				</div>
+				<ul data-role="listview" data-inset="true">
+					<li><a href="party themes.html">
+					<img src="images/paisley3.png"/>
+					<h3>Party Themes</h3>
+					<p>
+						Location Location Location.
+					</p>
+					</a></li>
+					<li><a href="invitation.html">
+					<img src="images/mail.png"/>
+					<h3>Invitations</h3>
+					<p>
+						Customize your invitations here.
+					</p>
+					</a></li>
+					<li><a href="venue.html">
+					<img src="images/tajmahal.ico"/>
+					<h3>Venue</h3>
+					<p>
+						Location Location Location.
+					</p>
+					</a></li>
+				</ul>
+				<div data-role="footer" data-position="fixed" data-id="guest">
+					<div data-role="navbar">
+						<ul>
+							<li><a href="budget.html">Budget</a></li>
+							<li><a href="#calendar">Calendar</a></li>
+							<li><a href="#contact">Contact</a></li>
+							<li><a href="#home">Home</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			<!--Menu-->
+			<div data-role="page" id="menu" data-add-back-btn="true">
+				<div data-role="header" data-position="fixed">
+					<h1>Menu</h1>
+				</div>
+				<div data-role="content">
+					<p>
+						What will you serve?
+					</p>
+				</div>
+				<ul data-role="listview" data-inset="true">
+					<li><a href="#food">
+					<img src="images/mixedtart.tif"/>
+					<h3>Food</h3>
+					<p>
+						Catering, Potlucks, and more.
+					</p>
+					</a></li>
+					<li><a href="#drink">
+					<img src="images/ico copy/apple_drink.ico"/>
+					<h3>Drinks</h3>
+					<p>
+						You can customize your beverages. Create signature drinks.
+					</p>
+					</a></li>
+					<li><a href="#appetizer">
+					<img src="images/appetizer.tif"/>
+					<h3>Appetizers</h3>
+					<p>
+						Create a wonderful spread.
+					</p>
+					</a></li>
+					<li><a href="desert.html">
+					<img src="images/cake/Cake005.ico"/>
+					<h3>Deserts</h3>
+					<p>
+						Deserts have a lot of flexibility.
+					</p>
+					</a></li>
+				</ul>
+				<div data-role="footer" data-position="fixed" data-id="guest">
+					<div data-role="navbar">
+						<ul>
+							<li><a href="budget.html">Budget</a></li>
+							<li><a href="#calendar">Calendar</a></li>
+							<li><a href="#contact">Contact</a></li>
+							<li><a href="#home">Home</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--Music-->
+			<div data-role="page" id="music" data-add-back-btn="true">
+				<div data-role="header" data-position="fixed">
+					<h1>Music</h1>
+				</div>
+				<div data-role="content">
+					<p>
+						Parties need music. What's on your playlist?
+					</p>
+				</div>
+				<ul data-role="listview" data-inset="true">
+					<li><a href="#dj">
+					<img src="images/dj.png"/>
+					<h3>DJ Services</h3>
+					<p>
+						DJ's can help set the party mood.
+					</p>
+					</a></li>
+					<li><a href="#ipod">
+					<img src="images/iPodplayer.png"/>
+					<h3>iTunes</h3>
+					<p>
+						Customize your own playlist.
+					</p>
+					</a></li>
+					<li><a href="#cloud">
+					<img src="images/iCloud.png"/>
+					<h3>Cloud Services</h3>
+					<p>
+						Music Resources. iCloud, Spotify, iTunes & more.
+					</p>
+					</a></li>
+				</ul>
+				<div data-role="footer" data-position="fixed" data-id="guest">
+					<div data-role="navbar">
+						<ul>
+							<li><a href="budget.html">Budget</a></li>
+							<li><a href="#calendar">Calendar</a></li>
+							<li><a href="#contact">Contact</a></li>
+							<li><a href="#home"data-icon="home">Home</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--Decorations-->
+			<div data-role="page" id="decorations" data-add-back-btn="true">
+				<div data-role="header" data-position="fixed">
+					<h1>Decorations</h1>
+				</div>
+				<div data-role="content">
+					<p>
+						What will you serve?
+					</p>
+				</div>
+				<ul data-role="listview" data-inset="true">
+					<li><a href="#tableware">
+					<img src="images/tableware.png"/>
+					<h3>Tableware</h3>
+					<p>
+						Throw a party with theme specific Party Tableware..
+					</p>
+					</a></li>
+					<li><a href="#games">
+					<img src="images/games.ico"/>
+					<h3>Games & Activities</h3>
+					<p>
+						Fun party games and activities for your party pleasure.
+					</p>
+					</a></li>
+					<li><a href="#partyitems">
+					<img src="images/balloons.ico"/>
+					<h3>Party Items</h3>
+					<p>
+						Themed party supplies.
+					</p>
+					</a></li>
+					<li><a href="favors">
+					<img src="images/marbles.icns"/>
+					<h3>Party Favors</h3>
+					<p>
+						Create a memorable tea party with tea party favors.
+					</p>
+					</a></li>
+				</ul>
+				<div data-role="footer" data-position="fixed" data-id="guest">
+					<div data-role="navbar">
+						<ul>
+							<li><a href="budget.html">Budget</a></li>
+							<li><a href="#calendar">Calendar</a></li>
+							<li><a href="#contact">Contact</a></li>
+							<li><a href="#home"data-icon="home">Home</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		<!-- JavaScript under here -->
+		<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.0rc2/jquery.mobile-1.0rc2.min.js"></script>
+		<script src="js/jquery.js" type="text/javascript"></script>
+		<script src="js/index.js" type="text/javascript"></script>
+	</body>
+</html>

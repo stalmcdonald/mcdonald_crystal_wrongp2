@@ -1,0 +1,107 @@
+<!doctype html>  
+<html lang="en">
+	<head>
+	
+		<meta charset="utf-8">
+		
+		<title>I Love Tea!</title>
+		
+		<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- Mobile IE needs ClearType for smoothing fonts -->
+		<meta http-equiv="cleartype" content="on">
+		
+		<!-- StyleSheets under here -->
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0rc2/jquery.mobile-1.0rc2.min.css" />
+		<link rel="stylesheet" href="css/style.css" type="text/css" />
+		<link rel="stylesheet" href="additem.html" type="text/area" />
+		<link rel="stylesheet" href="links/budget.html" type="text/area" />
+		
+		<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+		<script src="js/libs/modernizr.custom.min.js"></script>
+	</head>
+		<body>
+			!--Guest List-->
+			<div data-role="page" id="invitation" data-add-back-btn="true">
+			
+				<div data-role="header" data-position="fixed">
+					<h1>Invitations</h1>
+				</div>
+				
+				<div data-role="content">
+				<p>Customize your invitations</p>
+				</div>
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">Classic</li>
+							<li><a href="#classic">
+								<img src="images/guest.png"/>
+								<h3>Gold and Lace</h3>
+								<p>This style is a classic.</p>
+							</a></li>
+							
+							<li><a href="#classic">
+								<img src="images/guest.png"/>
+								<h3>Black and White</h3>
+								<p>You can never go wrong with this style.</p>
+							</a></li>
+							
+					<li data-role="list-divider">Bright & Bold</li>
+						<li><a href="#colors">
+								<img src="images/invite.png"/>
+								<h3>Solid</h3>
+								<p>Choose from over 10 popular colors.</p>
+							</a></li>
+						<li><a href="#polkadot">
+								<img src="images/rsvp.png"/>
+								<h3>Polka Dots</h3>
+								<p>Pastel, Circus, Ice Cream.</p>
+							</a></li>
+						<li><a href="#stripes">
+								<img src="images/attend.png"/>
+								<h3>Stripes</h3>
+								<p>Bold, Pastel, Bright.</p>
+							</a></li>
+							
+							<li data-role="list-divider">Whimsical</li>
+						<li><a href="#whimsy">
+								<img src="images/invite.png"/>
+								<h3>Fairy</h3>
+								<p>Try this whimsical look.</p>
+							</a></li>
+						<li><a href="#patterned">
+								<img src="images/rsvp.png"/>
+								<h3>Patterned</h3>
+								<p>Choose from multiple designs.</p>
+							</a></li>
+						<li><a href="#flirty">
+								<img src="images/attend.png"/>
+								<h3>Flirty</h3>
+								<p>Fun and flirty styles.</p>
+							</a></li>
+
+					</ul>
+				
+				<div data-role="footer" data-position="fixed" data-id="guest">
+					<div data-role="navbar">
+						<ul>
+							<li><a href="budget.html">Budget</a></li>
+							<li><a href="#calendar">Calendar</a></li>
+							<li><a href="#contact">Contact</a></li>
+							<li><a href="#home">Home</a></li>
+						</ul>
+					</div>
+				</div>
+		</div>
+
+
+	
+		<!-- JavaScript under here -->
+		<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.0rc2/jquery.mobile-1.0rc2.min.js"></script>
+		<script src="js/jquery.js" type="text/javascript"></script>
+		<script src="js/index.js" type="text/javascript"></script>
+	</body>
+</html>

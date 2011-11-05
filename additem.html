@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!-- Creating a form doc. -->
+<!-- Name: Crystal McDonald -->
+<!-- Class: Mobile Interfaces & Usability (MiU) -->
+<!-- Term: 1111 -->
+<!-- Project: Project 1 -->
+<!-- Title: Guest List Event Planner App-->
+<html lang="en">
+	<head>
+	
+		<meta charset="utf-8">
+		
+		<title>I Love Tea!</title>
+		
+		<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+		<meta name="HandheldFriendly" content="True"></meta>
+		<meta name="MobileOptimized" content="320"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- Mobile IE needs ClearType for smoothing fonts -->
+		<meta http-equiv="cleartype" content="on">
+		
+		<!-- StyleSheets under here -->
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0rc2/jquery.mobile-1.0rc2.min.css" />
+		<link rel="stylesheet" href="css/style.css" type="text/css" />
+		<link rel="stylesheet" href="links/budget.html" type="text/area" />
+		
+		<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+		<script src="js/libs/modernizr.custom.min.js"></script>
+		
+	
+	</head>
+	<!--Document Body -->
+	<body class="ui-mobile-viewport">
+		<!-- Header Tags -->
+		<!--Headline tag-->
+		<!-- Document Title -->
+		<header><h1 id="test">Guest Information </h1>
+				<!-- Header Tags -->
+				<!--Headline tag-->
+				<!-- Document Title -->	
+			<h2>Tea Party Guest List </h2></header>
+			<!--Back button -->
+        		<a type="button"  href="index.html"name="" value="" class="css3button">Back</a>
+			<form action = "" enctype = "multipart/form-data" method ="post" id= "guestForm" class = "bg">
+				<fieldset id="form">
+					<h1> Add a Guest </h1>
+					<span>* fields are required.</span>
+					<ul id="errors"></ul>
+					<ul id="questions">
+						<!--Add a guest Drop Down List -->
+						<li id ="select"><label for="guest">*Add Guest:</label><br /></li>
+						<!--Guest first/last Name text boxes -->
+						<li><label for = "fname">*First Name: </label><input type = "text" id = "fname" /></li>
+						<li><label for = "lname">*Last Name: </label><input type = "text" id = "lname" /></li>
+					<!-- Date Input -->
+					</ul>
+					<ul>
+						<li><label for="date" >Date Invitation Mailed:</label><input type="date" id="date" /></li>
+					</ul>
+					<!-- RSVP Check Box  -->
+					<ul>	
+						<li><input type ="checkbox" id ="RSVPd" value ="Yes" class="checkbox" /><label for ="RSVPd">RSVPd</label></li>
+					</ul>
+					<!--Radio click boxes for Attendance-->
+					<ul>
+						<li><label for = "Guest Count Info"> *Guest Count Info:</label></li>
+						<li><input type = "radio" checked value = "Attending" id = "Attending" name = "attend" /><label for = "Attending">Attending</label></li>
+						<li><input type = "radio" checked value = "Not Attending" id = "Not Attending" name = "attend" /><label for = "Not Attending"> Not Attending</label></li>
+						<li><input type = "radio" checked value = "Maybe" id = "Maybe" name = "attend" /><label for = "Maybe">Maybe</label></li>
+					</ul>
+					<!-- Additional Guest slider -->
+					<ul>
+						<li>Additional Guest:<input type="range" min="0" max="4" value="0" step="1" onchange="showValue(this.value)" id="Additional" />
+							<span id="range">0</span>
+						</li>
+					</ul>		
+					<!--add notes regarding guests here. List allergies, or items they may bring.-->
+					<ul>
+						<li><label for = "notes" >Guest Notes Here: <br></label><textarea id = "notes"></textarea></li>
+					</ul>
+				</fieldset>
+					<!--submit button-->
+					<input type = "submit" value = "Create Guest" id="submit"/>	
+			</form>
+			<footer>
+				<nav>
+					<!--Link to delete info-->
+					<a href="#" id="clear">Clear Stored Data</a> 
+					<!--Link to displaying info-->
+					<a href="#" id="displayLink">Display Data</a> 
+					<a href="additem.html" id="addNew" style="display:none;">Add New Guest</a>
+				</nav>
+			</footer>
+		<script src="js/main.js" type="text/javascript"></script>
+		<script type="text/javascript">
+				function showValue(newValue)
+					{
+						document.getElementById("range").innerHTML=newValue;
+					}
+		</script> 
+	</body>			
+</html>

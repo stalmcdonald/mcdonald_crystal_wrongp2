@@ -1,0 +1,277 @@
+/*
+
+Title: I Love Tea!
+By: Crystal McDonald
+For: MIU 1110
+Assignment: Project 1
+Date: October 3, 2011
+
+*/
+
+/* Make it look like an iPhone */
+body{
+	font-family: "Lucida Grande", "Arial", sans-serif;margin: auto;padding: 10px;
+
+	
+}
+#site-wrapper{
+	background: url(../img/iphoneBG.jpg) no-repeat;height: 885px; padding-top:25;
+}
+#content{
+	width: 480px;height: 690px;overflow: scroll;
+}
+
+/* Font normalization 
+ */
+
+body { 
+	font:12px/1.231 sans-serif; *font-size:small; 
+}
+select, input, textarea, button { 
+	font:99% sans-serif; 
+}
+
+legend {
+	font-size: 1em; color: #e80a64;   text-align: left; line-height: 1.6em;
+}
+textarea { overflow: auto; 
+} /* www.sitepoint.com */
+
+/* Headers (h1, h2, etc)  */
+h1, h2, h3, h4, h5, h6 { 
+	font-weight: bold; 
+}
+
+.thumb {
+	background:images/tea.png no-repeat;
+	width: 142px;
+	height: 115px;
+	float: right;
+	z-index: 2;
+	position: relative;
+}
+
+/*
+ * Primary styles
+ */
+
+body{
+	/* background: #2D1E44; */ text-align: center;font-family:  "HelveticaNeue-Light","HelveticaNeue",Helvetica,Arial,sans-serif; font-weight: light; 
+}
+
+#container {
+	background: url(../img/mainBG.jpg) center top repeat; width: 100%; min-width:1060px;
+}
+
+/* text and links */
+
+p {
+	 color: #DA1D68;   text-align: left; line-height: 1.6em; 
+}
+.intro {
+	font-size: 2.1em !important; text-align: center; margin: 5px 0;
+}  
+.intro span {
+	color:#DA1D68 ;
+}
+
+/* Headers*/
+h1 {
+	color: #DA1D68; font-size: 3em; margin: 0 0 32px 0;
+}
+h2 {
+	color: #fff; font-size: 1.9em; margin: 0 0 3px 0;
+}
+
+h3 {
+	color: #20112e; font-size: 1.2em; margin: 0 0 15px 0;
+}
+h3 a {
+	font-family:  "HelveticaNeue-Light","HelveticaNeue",Helvetica,Arial,sans-serif; font-weight: lighter; 
+}
+
+h4 {
+	font-size: 1.3em; line-height: 1.6em; color: #fff; margin: 0 0 10px 0; font-weight: normal; 
+}
+h4 a {
+	color: #fff;
+}
+h4 span {
+display: block; font-weight: normal; font-size: 1em; margin: 0 0 15px 0;
+}
+
+a { 	
+	color: #e80a64; text-decoration: none;
+}
+a:hover {
+	color:#fe8abb; text-decoration: underline;
+}
+ 
+/* list styles */
+li{
+	list-style: none; color: #20112e;
+}
+#list {
+	color:#DA1D68 ;
+}
+/*Header*/
+
+header {
+	background: #fff  center 38px repeat-x; height: auto; overflow: hidden; border-bottom: 8px solid #0c2642;
+}
+header img {
+	padding: 25px 0 30px; }
+	
+
+	
+/* Navigation*/
+nav ul {  
+	min-height:60px; max-width: 850px; }
+
+nav {
+	margin: 0 auto; 
+    width: 960px;
+}
+
+
+nav ul > li:first-child {
+	margin-left: 0px !important;
+}
+nav ul > li.here:first-child {
+	margin-left: -10px !important;
+}
+nav li a{
+	display: block; float: left; text-decoration: none; color: #233f64; font-size: 1em;  text-transform: capitalize; padding: 11px 0 20px 17px; font-weight: normal;
+}
+nav li a:hover{
+	color: #20112e;
+}
+nav li.here a:hover{
+	color: #fff; text-decoration: none;} /*home*/
+nav li.here{
+	right top no-repeat; padding:0 25px 0 0; margin-left: -12px;
+} 
+nav li.here + li {
+	background: none ;
+}
+nav li.here + li a {
+	background: none ;padding: 10px 0 20px 8px;
+}
+
+/*postioning navigation menu*/
+nav {
+    bottom: 4em;
+    left: 5.5em;
+    width: 30em 
+}
+
+
+/*footer*/
+footer {c
+	lear: both;border-top: 6px solid #01dfff; padding: 40px; /* background: #2D1E44; */
+}
+footer ul {
+	margin: 20px 
+}
+footer ul li{
+	display: inline; padding: 0 20px;
+} 
+footer ul li a {
+	color: #fff;
+} 
+footer ul li.here a {
+	color: #e80a64;
+}
+footer p {
+	font-size:1em; margin: 20px 0 0 0; text-align: center;
+}
+
+
+[type = 'radio'] {
+	border: none; width: inherit;
+}
+ 
+fieldset{
+	border: #e80a64 5.5px solid;
+}
+
+#errors{
+ 	color: red;
+}
+ 
+ul{
+	list-style:none;
+}
+
+
+   
+span{
+	color: #e80a64;
+}
+#budget {
+	background: #2D1E44; text-align: center;font-family:  "HelveticaNeue-Light","HelveticaNeue",Helvetica,Arial,sans-serif; font-weight: light; 
+	font:25px/1.231 sans-serif;
+}
+#guestForm {
+	padding: 10px 0;
+	margin: 9px ;
+	text-align: left;
+	
+}
+
+/*--Create Guest Button--*/
+#go
+{
+        background: #6cbb6b;
+        background-image: -moz-linear-gradient(#e80a64, #D80062);
+        background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, #e80a64),color-stop(1, #D80062));
+
+        -moz-border-radius: 3px 50px 50px 3px;
+        border-radius: 3px 50px 50px 3px;
+
+        border-width: 1px;
+        border-style: solid;
+        border-color: #7eba7c #578e57 #447d43;
+
+         -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+         -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+         box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;                
+
+        height: 35px;
+        margin: 0 0 0 10px;
+        padding: 0;
+        width: 90px;
+        cursor: pointer;
+        font: bold 14px Arial, Helvetica;
+        color: #23441e;
+
+        text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+}
+
+#go:hover
+{
+        background: #95d788;
+        background-image: -moz-linear-gradient(#6cbb6b, #95d788);
+        background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, #95d788),color-stop(1, #6cbb6b));
+}       
+
+#go:active
+{
+        background: #95d788;
+        outline: none;
+
+         -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
+         -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
+         box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
+}
+
+#go::-moz-focus-inner
+{
+       border: 0;  /* Small centering fix for Firefox */
+}    
+
+.desert {
+	width: 100px;
+	height: 100px;
+} 
+       
